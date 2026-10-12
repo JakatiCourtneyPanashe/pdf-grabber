@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "PDF Grabber",
+  "version": "1.0.0",
+  "description": "Finds PDFs a page loads (even in viewers with the download button hidden) and lets you save them.",
+  "permissions": ["webRequest", "downloads", "storage", "scripting", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_popup": "popup.html", "default_title": "PDF Grabber" }
+}
